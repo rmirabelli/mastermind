@@ -11,22 +11,17 @@ struct Row {
     /// The game pieces within the row
     let pieces: [Piece]
     
-    ///  The number of `Pieces` in the row
-    static var rowLength: Int {
-        6
-    }
-    
     /// Returns a row where each piece is a random value. Useful for creating
     /// the eventual scored row
     static var random: Row {
-        let placeholder = Array<Int>.init(repeating: 0, count: rowLength)
+        let placeholder = Array<Int>.init(repeating: 0, count: GameConstants.pieces)
         let pieces = placeholder.map { _ in Piece(Color.random) }
         return Row(pieces: pieces)
     }
     
     /// Returns a row where each piece is clear
     static var empty: Row {
-        return Row(pieces: Array<Piece>.init(repeating: Piece.init(.none), count: rowLength))
+        return Row(pieces: Array<Piece>.init(repeating: Piece.init(.none), count: GameConstants.pieces))
     }
     
     /// Returns true if all of the elements have been set

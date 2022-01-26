@@ -21,10 +21,8 @@ struct RowScore {
     
     /// A full victory
     static var victory: RowScore {
-        RowScore(scores: Array<PieceScore>.init(repeating: .correct, count: Row.rowLength))
+        RowScore(scores: Array<PieceScore>.init(repeating: .correct, count: GameConstants.pieces))
     }
 }
 
-extension RowScore: Equatable {
-    
-}
+extension RowScore: Equatable {}

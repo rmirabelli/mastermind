@@ -29,6 +29,4 @@ struct Piece {
     }
 }
 
-extension Piece: Equatable {
-    
-}
+extension Piece: Equatable {}
