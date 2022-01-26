@@ -24,6 +24,7 @@
 		58615A6C27A0E50C0025D352 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A6B27A0E50C0025D352 /* GameState.swift */; };
 		58615A6E27A0E5750025D352 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A6D27A0E5750025D352 /* Solution.swift */; };
 		58615A7027A0E6690025D352 /* RowScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A6F27A0E6690025D352 /* RowScore.swift */; };
+		58615A7227A0F2790025D352 /* GameplayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A7127A0F2790025D352 /* GameplayError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		58615A6B27A0E50C0025D352 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		58615A6D27A0E5750025D352 /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
 		58615A6F27A0E6690025D352 /* RowScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowScore.swift; sourceTree = "<group>"; };
+		58615A7127A0F2790025D352 /* GameplayError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				58615A6B27A0E50C0025D352 /* GameState.swift */,
 				58615A6D27A0E5750025D352 /* Solution.swift */,
 				58615A6F27A0E6690025D352 /* RowScore.swift */,
+				58615A7127A0F2790025D352 /* GameplayError.swift */,
 				58615A3527A0E3B10025D352 /* Main.storyboard */,
 				58615A3827A0E3B20025D352 /* Assets.xcassets */,
 				58615A3A27A0E3B20025D352 /* LaunchScreen.storyboard */,
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58615A7227A0F2790025D352 /* GameplayError.swift in Sources */,
 				58615A7027A0E6690025D352 /* RowScore.swift in Sources */,
 				58615A6E27A0E5750025D352 /* Solution.swift in Sources */,
 				58615A6627A0E45E0025D352 /* Gameboard.swift in Sources */,

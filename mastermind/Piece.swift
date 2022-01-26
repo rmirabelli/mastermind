@@ -13,4 +13,16 @@ struct Piece {
     init(_ color: Color) {
         self.color = color
     }
+    
+    static var random: Piece {
+        Piece(Color.random)
+    }
+    
+    static var empty: Piece {
+        Piece(Color.none)
+    }
+}
+
+extension Piece: Equatable {
+    
 }

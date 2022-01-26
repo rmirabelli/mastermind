@@ -38,5 +38,19 @@ class mastermindTests: XCTestCase {
         let comparison = secondRow.compareTo(firstRow)
         XCTAssertEqual(comparison.scores[0], RowScore.PieceScore.incorrectLocation)
     }
+    
+    func testRandom() throws {
+        let random = Row.random
+        print(random.pieces)
+        XCTAssertFalse(random.pieces.isEmpty)
+    }
+    
+    func testPush() throws {
+        let starting = Row.empty
+        let other = try starting.push(Piece(.red))
+        print(other)
+        print(other.compareTo(Row.empty))
+        XCTAssert(other.compareTo(Row.empty).scores.contains(RowScore.PieceScore.incorrect))
+    }
 
 }

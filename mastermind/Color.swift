@@ -7,11 +7,11 @@
 
 import Foundation
 
-enum Color {
+enum Color: CaseIterable {
     case red, green, blue, yellow, orange, purple
     case none
     
     static var random: Color {
-        .red
+        [Color.red, Color.green, Color.blue, Color.yellow, Color.orange, Color.purple].randomElement() ?? .none
     }
 }
