@@ -22,7 +22,6 @@
 		58615A6627A0E45E0025D352 /* Gameboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A6527A0E45E0025D352 /* Gameboard.swift */; };
 		58615A6827A0E49F0025D352 /* Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A6727A0E49F0025D352 /* Turn.swift */; };
 		58615A6C27A0E50C0025D352 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A6B27A0E50C0025D352 /* GameState.swift */; };
-		58615A6E27A0E5750025D352 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A6D27A0E5750025D352 /* Solution.swift */; };
 		58615A7027A0E6690025D352 /* RowScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A6F27A0E6690025D352 /* RowScore.swift */; };
 		58615A7227A0F2790025D352 /* GameplayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A7127A0F2790025D352 /* GameplayError.swift */; };
 /* End PBXBuildFile section */
@@ -64,7 +63,6 @@
 		58615A6527A0E45E0025D352 /* Gameboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gameboard.swift; sourceTree = "<group>"; };
 		58615A6727A0E49F0025D352 /* Turn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turn.swift; sourceTree = "<group>"; };
 		58615A6B27A0E50C0025D352 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
-		58615A6D27A0E5750025D352 /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
 		58615A6F27A0E6690025D352 /* RowScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowScore.swift; sourceTree = "<group>"; };
 		58615A7127A0F2790025D352 /* GameplayError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,7 +124,6 @@
 				58615A6527A0E45E0025D352 /* Gameboard.swift */,
 				58615A6727A0E49F0025D352 /* Turn.swift */,
 				58615A6B27A0E50C0025D352 /* GameState.swift */,
-				58615A6D27A0E5750025D352 /* Solution.swift */,
 				58615A6F27A0E6690025D352 /* RowScore.swift */,
 				58615A7127A0F2790025D352 /* GameplayError.swift */,
 				58615A3527A0E3B10025D352 /* Main.storyboard */,
@@ -287,7 +284,6 @@
 			files = (
 				58615A7227A0F2790025D352 /* GameplayError.swift in Sources */,
 				58615A7027A0E6690025D352 /* RowScore.swift in Sources */,
-				58615A6E27A0E5750025D352 /* Solution.swift in Sources */,
 				58615A6627A0E45E0025D352 /* Gameboard.swift in Sources */,
 				58615A6027A0E3D00025D352 /* Piece.swift in Sources */,
 				58615A3427A0E3B10025D352 /* ViewController.swift in Sources */,

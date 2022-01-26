@@ -52,5 +52,41 @@ class mastermindTests: XCTestCase {
         print(other.compareTo(Row.empty))
         XCTAssert(other.compareTo(Row.empty).scores.contains(RowScore.PieceScore.incorrect))
     }
+    
+    func testSimulateGameWinOnFirstTurn() throws {
+        var starting = Row.empty
+        let other = Row(pieces: [Piece(.purple), Piece(.red), Piece(.orange), Piece(.green), Piece(.red), Piece(.orange)])
+        starting = try starting.push(Piece(.purple))
+        starting = try starting.push(Piece(.red))
+        starting = try starting.push(Piece(.orange))
+        starting = try starting.push(Piece(.green))
+        starting = try starting.push(Piece(.red))
+        starting = try starting.push(Piece(.orange))
+        XCTAssertEqual(starting.compareTo(other), RowScore.victory)
+    }
+    
+    func testSimulateGameWinOnSecondTurn() throws {
+        var starting = Row.empty
+        let other = Row(pieces: [Piece(.purple), Piece(.red), Piece(.orange), Piece(.green), Piece(.red), Piece(.orange)])
+        starting = try starting.push(Piece(.purple))
+        starting = try starting.push(Piece(.red))
+        starting = try starting.push(Piece(.yellow))
+        starting = try starting.push(Piece(.red))
+        starting = try starting.push(Piece(.orange))
+        starting = try starting.push(Piece(.green))
+        print(starting)
+        print(other)
+        print(starting.compareTo(other))
+        XCTAssertNotEqual(starting.compareTo(other), RowScore.victory)
+        starting = Row.empty
+        starting = try starting.push(Piece(.purple))
+        starting = try starting.push(Piece(.red))
+        starting = try starting.push(Piece(.orange))
+        starting = try starting.push(Piece(.green))
+        starting = try starting.push(Piece(.red))
+        starting = try starting.push(Piece(.orange))
+        XCTAssertEqual(starting.compareTo(other), RowScore.victory)
+
+    }
 
 }

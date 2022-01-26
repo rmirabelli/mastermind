@@ -46,7 +46,7 @@ struct Row {
         newPieces[index] = piece
         return Row(pieces: newPieces)
     }
-    
+        
     /// Creates a `RowScore` based on how the two rows compare to one another
     /// - Parameter other: The other `Row`
     /// - Returns: a `RowScore`
@@ -56,6 +56,9 @@ struct Row {
             if pair.0 == pair.1 {
                 return RowScore.PieceScore.correct
             }
+            // This may need to be revised to disinclude any
+            // correct values
+            // FIXME???
             if other.pieces.contains(pair.0) {
                 return RowScore.PieceScore.incorrectLocation
             }

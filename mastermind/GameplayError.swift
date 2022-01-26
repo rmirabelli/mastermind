@@ -8,5 +8,5 @@
 import Foundation
 
 enum GameplayError: Error {
-    case rowFull
+    case rowFull // tried to push a piece into an already-full row
 }
