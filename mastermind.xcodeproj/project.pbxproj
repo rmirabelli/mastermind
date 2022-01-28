@@ -17,7 +17,7 @@
 		58615A5127A0E3B20025D352 /* mastermindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A5027A0E3B20025D352 /* mastermindUITests.swift */; };
 		58615A5327A0E3B20025D352 /* mastermindUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A5227A0E3B20025D352 /* mastermindUITestsLaunchTests.swift */; };
 		58615A6027A0E3D00025D352 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A5F27A0E3D00025D352 /* Piece.swift */; };
-		58615A6227A0E3ED0025D352 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A6127A0E3EC0025D352 /* Color.swift */; };
+		58615A6227A0E3ED0025D352 /* GameColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A6127A0E3EC0025D352 /* GameColor.swift */; };
 		58615A6427A0E4370025D352 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A6327A0E4370025D352 /* Row.swift */; };
 		58615A6627A0E45E0025D352 /* Gameboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A6527A0E45E0025D352 /* Gameboard.swift */; };
 		58615A6827A0E49F0025D352 /* Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A6727A0E49F0025D352 /* Turn.swift */; };
@@ -25,6 +25,12 @@
 		58615A7027A0E6690025D352 /* RowScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A6F27A0E6690025D352 /* RowScore.swift */; };
 		58615A7227A0F2790025D352 /* GameplayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A7127A0F2790025D352 /* GameplayError.swift */; };
 		58615A7427A106F10025D352 /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58615A7327A106F10025D352 /* GameConstants.swift */; };
+		7D29C56D27A45B2700BC5A5C /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29C56C27A45B2700BC5A5C /* RowView.swift */; };
+		7D29C56F27A45E4200BC5A5C /* GameboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29C56E27A45E4200BC5A5C /* GameboardView.swift */; };
+		7D29C57127A460EF00BC5A5C /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29C57027A460EF00BC5A5C /* ScoreView.swift */; };
+		7D29C57327A461E300BC5A5C /* ScorePieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29C57227A461E300BC5A5C /* ScorePieceView.swift */; };
+		7D29C57527A4671E00BC5A5C /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29C57427A4671E00BC5A5C /* InputView.swift */; };
+		7DCFE37727A44B0A00C42C46 /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCFE37627A44B0A00C42C46 /* PieceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +65,7 @@
 		58615A5027A0E3B20025D352 /* mastermindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mastermindUITests.swift; sourceTree = "<group>"; };
 		58615A5227A0E3B20025D352 /* mastermindUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mastermindUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		58615A5F27A0E3D00025D352 /* Piece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
-		58615A6127A0E3EC0025D352 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		58615A6127A0E3EC0025D352 /* GameColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColor.swift; sourceTree = "<group>"; };
 		58615A6327A0E4370025D352 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		58615A6527A0E45E0025D352 /* Gameboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gameboard.swift; sourceTree = "<group>"; };
 		58615A6727A0E49F0025D352 /* Turn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turn.swift; sourceTree = "<group>"; };
@@ -67,6 +73,12 @@
 		58615A6F27A0E6690025D352 /* RowScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowScore.swift; sourceTree = "<group>"; };
 		58615A7127A0F2790025D352 /* GameplayError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayError.swift; sourceTree = "<group>"; };
 		58615A7327A106F10025D352 /* GameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
+		7D29C56C27A45B2700BC5A5C /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		7D29C56E27A45E4200BC5A5C /* GameboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardView.swift; sourceTree = "<group>"; };
+		7D29C57027A460EF00BC5A5C /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		7D29C57227A461E300BC5A5C /* ScorePieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePieceView.swift; sourceTree = "<group>"; };
+		7D29C57427A4671E00BC5A5C /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		7DCFE37627A44B0A00C42C46 /* PieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,15 +132,8 @@
 				58615A2F27A0E3B10025D352 /* AppDelegate.swift */,
 				58615A3127A0E3B10025D352 /* SceneDelegate.swift */,
 				58615A3327A0E3B10025D352 /* ViewController.swift */,
-				58615A5F27A0E3D00025D352 /* Piece.swift */,
-				58615A6127A0E3EC0025D352 /* Color.swift */,
-				58615A6327A0E4370025D352 /* Row.swift */,
-				58615A6527A0E45E0025D352 /* Gameboard.swift */,
-				58615A6727A0E49F0025D352 /* Turn.swift */,
-				58615A6B27A0E50C0025D352 /* GameState.swift */,
-				58615A6F27A0E6690025D352 /* RowScore.swift */,
-				58615A7127A0F2790025D352 /* GameplayError.swift */,
-				58615A7327A106F10025D352 /* GameConstants.swift */,
+				7D29C57627A46B8700BC5A5C /* SwiftUI */,
+				7DCFE37527A44AC900C42C46 /* GameRules */,
 				58615A3527A0E3B10025D352 /* Main.storyboard */,
 				58615A3827A0E3B20025D352 /* Assets.xcassets */,
 				58615A3A27A0E3B20025D352 /* LaunchScreen.storyboard */,
@@ -152,6 +157,35 @@
 				58615A5227A0E3B20025D352 /* mastermindUITestsLaunchTests.swift */,
 			);
 			path = mastermindUITests;
+			sourceTree = "<group>";
+		};
+		7D29C57627A46B8700BC5A5C /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				7DCFE37627A44B0A00C42C46 /* PieceView.swift */,
+				7D29C56C27A45B2700BC5A5C /* RowView.swift */,
+				7D29C56E27A45E4200BC5A5C /* GameboardView.swift */,
+				7D29C57227A461E300BC5A5C /* ScorePieceView.swift */,
+				7D29C57027A460EF00BC5A5C /* ScoreView.swift */,
+				7D29C57427A4671E00BC5A5C /* InputView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		7DCFE37527A44AC900C42C46 /* GameRules */ = {
+			isa = PBXGroup;
+			children = (
+				58615A6127A0E3EC0025D352 /* GameColor.swift */,
+				58615A5F27A0E3D00025D352 /* Piece.swift */,
+				58615A6327A0E4370025D352 /* Row.swift */,
+				58615A6527A0E45E0025D352 /* Gameboard.swift */,
+				58615A6727A0E49F0025D352 /* Turn.swift */,
+				58615A6B27A0E50C0025D352 /* GameState.swift */,
+				58615A6F27A0E6690025D352 /* RowScore.swift */,
+				58615A7127A0F2790025D352 /* GameplayError.swift */,
+				58615A7327A106F10025D352 /* GameConstants.swift */,
+			);
+			path = GameRules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,16 +320,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				58615A7227A0F2790025D352 /* GameplayError.swift in Sources */,
+				7D29C57127A460EF00BC5A5C /* ScoreView.swift in Sources */,
 				58615A7027A0E6690025D352 /* RowScore.swift in Sources */,
 				58615A6627A0E45E0025D352 /* Gameboard.swift in Sources */,
 				58615A6027A0E3D00025D352 /* Piece.swift in Sources */,
 				58615A3427A0E3B10025D352 /* ViewController.swift in Sources */,
 				58615A7427A106F10025D352 /* GameConstants.swift in Sources */,
 				58615A3027A0E3B10025D352 /* AppDelegate.swift in Sources */,
-				58615A6227A0E3ED0025D352 /* Color.swift in Sources */,
+				58615A6227A0E3ED0025D352 /* GameColor.swift in Sources */,
 				58615A6427A0E4370025D352 /* Row.swift in Sources */,
+				7D29C56D27A45B2700BC5A5C /* RowView.swift in Sources */,
+				7D29C57327A461E300BC5A5C /* ScorePieceView.swift in Sources */,
 				58615A6C27A0E50C0025D352 /* GameState.swift in Sources */,
 				58615A6827A0E49F0025D352 /* Turn.swift in Sources */,
+				7D29C56F27A45E4200BC5A5C /* GameboardView.swift in Sources */,
+				7D29C57527A4671E00BC5A5C /* InputView.swift in Sources */,
+				7DCFE37727A44B0A00C42C46 /* PieceView.swift in Sources */,
 				58615A3227A0E3B10025D352 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +516,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 35RU8AKZX8;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mastermind/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -504,6 +545,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 35RU8AKZX8;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mastermind/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

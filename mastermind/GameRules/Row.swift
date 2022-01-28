@@ -10,12 +10,12 @@ import Foundation
 struct Row {
     /// The game pieces within the row
     let pieces: [Piece]
-    
+
     /// Returns a row where each piece is a random value. Useful for creating
     /// the eventual scored row
     static var random: Row {
         let placeholder = Array<Int>.init(repeating: 0, count: GameConstants.pieces)
-        let pieces = placeholder.map { _ in Piece(Color.random) }
+        let pieces = placeholder.map { _ in Piece(GameColor.random) }
         return Row(pieces: pieces)
     }
     
