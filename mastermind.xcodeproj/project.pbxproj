@@ -30,7 +30,9 @@
 		7D29C57127A460EF00BC5A5C /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29C57027A460EF00BC5A5C /* ScoreView.swift */; };
 		7D29C57327A461E300BC5A5C /* ScorePieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29C57227A461E300BC5A5C /* ScorePieceView.swift */; };
 		7D29C57527A4671E00BC5A5C /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29C57427A4671E00BC5A5C /* InputView.swift */; };
+		7D29C57827A4757500BC5A5C /* PieceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29C57727A4757500BC5A5C /* PieceButton.swift */; };
 		7DCFE37727A44B0A00C42C46 /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCFE37627A44B0A00C42C46 /* PieceView.swift */; };
+		7DF1BA4127A47E4900DB95AC /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF1BA4027A47E4900DB95AC /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +80,9 @@
 		7D29C57027A460EF00BC5A5C /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		7D29C57227A461E300BC5A5C /* ScorePieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePieceView.swift; sourceTree = "<group>"; };
 		7D29C57427A4671E00BC5A5C /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		7D29C57727A4757500BC5A5C /* PieceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceButton.swift; sourceTree = "<group>"; };
 		7DCFE37627A44B0A00C42C46 /* PieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceView.swift; sourceTree = "<group>"; };
+		7DF1BA4027A47E4900DB95AC /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,8 @@
 				7D29C57227A461E300BC5A5C /* ScorePieceView.swift */,
 				7D29C57027A460EF00BC5A5C /* ScoreView.swift */,
 				7D29C57427A4671E00BC5A5C /* InputView.swift */,
+				7D29C57727A4757500BC5A5C /* PieceButton.swift */,
+				7DF1BA4027A47E4900DB95AC /* GameView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -330,8 +336,10 @@
 				58615A6227A0E3ED0025D352 /* GameColor.swift in Sources */,
 				58615A6427A0E4370025D352 /* Row.swift in Sources */,
 				7D29C56D27A45B2700BC5A5C /* RowView.swift in Sources */,
+				7D29C57827A4757500BC5A5C /* PieceButton.swift in Sources */,
 				7D29C57327A461E300BC5A5C /* ScorePieceView.swift in Sources */,
 				58615A6C27A0E50C0025D352 /* GameState.swift in Sources */,
+				7DF1BA4127A47E4900DB95AC /* GameView.swift in Sources */,
 				58615A6827A0E49F0025D352 /* Turn.swift in Sources */,
 				7D29C56F27A45E4200BC5A5C /* GameboardView.swift in Sources */,
 				7D29C57527A4671E00BC5A5C /* InputView.swift in Sources */,

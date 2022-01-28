@@ -14,6 +14,7 @@ struct RowScore {
         case correct
         case incorrectLocation
         case incorrect
+        case empty
     }
     
     /// The scores for this row
@@ -22,6 +23,11 @@ struct RowScore {
     /// A full victory
     static var victory: RowScore {
         RowScore(scores: Array<PieceScore>.init(repeating: .correct, count: GameConstants.pieces))
+    }
+
+    /// No score yet
+    static var empty: RowScore {
+        RowScore(scores: Array<PieceScore>.init(repeating: .empty, count: GameConstants.pieces))
     }
 }
 

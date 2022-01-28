@@ -7,13 +7,32 @@
 
 import Foundation
 
-struct GameState {
+class GameState: ObservableObject {
     /// The gameboard for this game
-    let gameboard: Gameboard
+    @Published var gameboard: Gameboard
     
     /// The current turn
-    let turn: Turn
+    @Published var turn: Turn
     
     /// The solution for this game
     let solution: Row
+
+    func submit() {
+        if turn.row.isFull() {
+            gameboard = gameboard.push(turn.row)
+        }
+    }
+
+    var score: RowScore {
+        if let row = gameboard.rows.firstIndex(of: Row.empty), row != 0 {
+            return gameboard.rows[row-1].compareTo(solution)
+        }
+        return RowScore.empty
+    }
+
+    init() {
+        gameboard = Gameboard()
+        turn = Turn(row: Row.empty)
+        solution = Row.random
+    }
 }

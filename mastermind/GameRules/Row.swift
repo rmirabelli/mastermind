@@ -41,6 +41,14 @@ struct Row {
         newPieces[index] = piece
         return Row(pieces: newPieces)
     }
+
+    func pop() -> Row {
+        var newPieces = pieces
+        if let index = pieces.firstIndex(of: Piece.empty) {
+            newPieces[index-1] = Piece(.none)
+        }
+        return Row(pieces: newPieces)
+    }
         
     /// Creates a `RowScore` based on how the two rows compare to one another
     /// - Parameter other: The other `Row`
@@ -62,3 +70,5 @@ struct Row {
         return RowScore(scores: mapped)
     }
 }
+
+extension Row: Equatable { }

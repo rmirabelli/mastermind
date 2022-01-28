@@ -21,6 +21,9 @@ struct ScorePieceView: View {
         case .incorrectLocation:
             return Image(systemName: "questionmark.circle")
                 .foregroundColor(.orange)
+        case .empty:
+            return Image(systemName: "circle")
+                .foregroundColor(.black)
         }
     }
 }

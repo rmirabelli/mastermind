@@ -6,12 +6,19 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
 
+    let gameState = GameState()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let vc = UIHostingController(rootView: GameView(gameState: gameState))
+        addChild(vc)
+        vc.view.frame = view.frame
+        view.addSubview(vc.view)
+        vc.didMove(toParent: self)
     }
 
 
