@@ -67,6 +67,7 @@ struct Row {
             }
             return RowScore.PieceScore.incorrect
         }
+
         return RowScore(scores: mapped)
     }
 }

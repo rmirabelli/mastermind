@@ -24,7 +24,7 @@ struct InputView: View {
             HStack {
                 Spacer()
                 Button {
-                    gameState.turn.row = gameState.turn.row.pop()
+                    // IMPLEMENT UNDO HERE
                 } label: {
                     Image(systemName: "arrow.left.circle")
                 }
