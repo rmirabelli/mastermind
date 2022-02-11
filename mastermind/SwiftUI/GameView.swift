@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GameView: View {
     @ObservedObject var gameState: GameState
+    weak var caretaker: Caretaker?
 
     var body: some View {
         VStack {
@@ -17,7 +18,7 @@ struct GameView: View {
             Spacer()
             GameboardView(gameboard: gameState.gameboard)
             Spacer()
-            InputView(gameState: gameState)
+            InputView(gameState: gameState, caretaker: caretaker)
             Spacer()
         }
     }

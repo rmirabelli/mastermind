@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Gameboard {
+struct Gameboard: Codable {
     /// The rows of pieces in the game; each row is a turn
     let rows: [Row]
 

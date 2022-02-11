@@ -9,21 +9,25 @@ import SwiftUI
 
 struct InputView: View {
     @ObservedObject var gameState: GameState
+    weak var caretaker: Caretaker?
 
     var body: some View {
         VStack {
             RowView(row: gameState.turn.row)
             HStack {
-                PieceButton(gameColor: .red, gameState: gameState)
-                PieceButton(gameColor: .yellow, gameState: gameState)
-                PieceButton(gameColor: .green, gameState: gameState)
-                PieceButton(gameColor: .blue, gameState: gameState)
-                PieceButton(gameColor: .orange, gameState: gameState)
-                PieceButton(gameColor: .purple, gameState: gameState)
+                PieceButton(gameColor: .red, gameState: gameState, caretaker: caretaker)
+                PieceButton(gameColor: .yellow, gameState: gameState, caretaker: caretaker)
+                PieceButton(gameColor: .green, gameState: gameState, caretaker: caretaker)
+                PieceButton(gameColor: .blue, gameState: gameState, caretaker: caretaker)
+                PieceButton(gameColor: .orange, gameState: gameState, caretaker: caretaker)
+                PieceButton(gameColor: .purple, gameState: gameState, caretaker: caretaker)
             }
             HStack {
                 Spacer()
                 Button {
+                    if let state: GameState = try? caretaker?.pop() {
+                        gameState.from(other: state)
+                    }
                     // IMPLEMENT UNDO HERE
                 } label: {
                     Image(systemName: "arrow.left.circle")
@@ -32,6 +36,7 @@ struct InputView: View {
                 Button {
                     gameState.submit()
                     gameState.turn.row = Row.empty
+                    try? caretaker?.push(gameState)
                 } label: {
                     Image(systemName: "arrow.right.circle")
                 }

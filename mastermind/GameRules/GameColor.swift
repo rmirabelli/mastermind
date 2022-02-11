@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// The available game piece colors
-enum GameColor {
+enum GameColor: Codable {
     case red, green, blue, yellow, orange, purple
     case none
 

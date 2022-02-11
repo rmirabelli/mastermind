@@ -10,11 +10,13 @@ import SwiftUI
 struct PieceButton: View {
     var gameColor: GameColor
     @ObservedObject var gameState: GameState
+    weak var caretaker: Caretaker?
 
     var body: some View {
         Button {
             do {
                 gameState.turn.row = try gameState.turn.row.push(Piece(gameColor))
+                try caretaker?.push(gameState)
             } catch {
                 print(error)
             }

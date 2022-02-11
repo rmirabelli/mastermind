@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Row {
+struct Row: Codable {
     /// The game pieces within the row
     let pieces: [Piece]
 

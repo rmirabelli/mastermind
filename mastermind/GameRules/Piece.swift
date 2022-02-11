@@ -8,7 +8,7 @@
 import Foundation
 
 /// A game piece
-struct Piece {
+struct Piece: Codable {
     /// The basic attribute of any game piece is its color
     let color: GameColor
 

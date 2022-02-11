@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Turn {
+struct Turn: Codable {
     /// A row within the turn
     var row: Row
     
