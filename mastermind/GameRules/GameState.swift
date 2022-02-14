@@ -20,6 +20,7 @@ class GameState: ObservableObject, Codable {
     func submit() {
         if turn.row.isFull() {
             gameboard = gameboard.push(turn.row)
+            turn.row = Row.empty
         }
     }
 

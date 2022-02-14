@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CucumberSwift",
+        "repositoryURL": "https://github.com/Tyler-Keith-Thompson/CucumberSwift",
+        "state": {
+          "branch": null,
+          "revision": "ac7fe71e554c4121d9b749ee724768cf22ea4fc3",
+          "version": "3.3.6"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

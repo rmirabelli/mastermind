@@ -31,6 +31,9 @@
 		7D29C57327A461E300BC5A5C /* ScorePieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29C57227A461E300BC5A5C /* ScorePieceView.swift */; };
 		7D29C57527A4671E00BC5A5C /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29C57427A4671E00BC5A5C /* InputView.swift */; };
 		7D29C57827A4757500BC5A5C /* PieceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29C57727A4757500BC5A5C /* PieceButton.swift */; };
+		7DA75D7027BACC99003C7FA8 /* CucumberSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7DA75D6F27BACC99003C7FA8 /* CucumberSwift */; };
+		7DA75D7227BACCE1003C7FA8 /* Features in Resources */ = {isa = PBXBuildFile; fileRef = 7DA75D7127BACCE1003C7FA8 /* Features */; };
+		7DA75D7427BACD51003C7FA8 /* CucumberSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA75D7327BACD51003C7FA8 /* CucumberSupport.swift */; };
 		7DCEB84427A84FDC00D9A2C6 /* Caretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCEB84327A84FDC00D9A2C6 /* Caretaker.swift */; };
 		7DCFE37727A44B0A00C42C46 /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCFE37627A44B0A00C42C46 /* PieceView.swift */; };
 		7DF1BA4127A47E4900DB95AC /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF1BA4027A47E4900DB95AC /* GameView.swift */; };
@@ -82,6 +85,8 @@
 		7D29C57227A461E300BC5A5C /* ScorePieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePieceView.swift; sourceTree = "<group>"; };
 		7D29C57427A4671E00BC5A5C /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		7D29C57727A4757500BC5A5C /* PieceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceButton.swift; sourceTree = "<group>"; };
+		7DA75D7127BACCE1003C7FA8 /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Features; sourceTree = "<group>"; };
+		7DA75D7327BACD51003C7FA8 /* CucumberSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CucumberSupport.swift; sourceTree = "<group>"; };
 		7DCEB84327A84FDC00D9A2C6 /* Caretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caretaker.swift; sourceTree = "<group>"; };
 		7DCFE37627A44B0A00C42C46 /* PieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceView.swift; sourceTree = "<group>"; };
 		7DF1BA4027A47E4900DB95AC /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -99,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA75D7027BACC99003C7FA8 /* CucumberSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				58615A4627A0E3B20025D352 /* mastermindTests.swift */,
+				7DA75D7327BACD51003C7FA8 /* CucumberSupport.swift */,
+				7DA75D7127BACCE1003C7FA8 /* Features */,
 			);
 			path = mastermindTests;
 			sourceTree = "<group>";
@@ -239,6 +247,9 @@
 				58615A4427A0E3B20025D352 /* PBXTargetDependency */,
 			);
 			name = mastermindTests;
+			packageProductDependencies = (
+				7DA75D6F27BACC99003C7FA8 /* CucumberSwift */,
+			);
 			productName = mastermindTests;
 			productReference = 58615A4227A0E3B20025D352 /* mastermindTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -293,6 +304,9 @@
 				Base,
 			);
 			mainGroup = 58615A2327A0E3B10025D352;
+			packageReferences = (
+				7DA75D6E27BACC99003C7FA8 /* XCRemoteSwiftPackageReference "CucumberSwift" */,
+			);
 			productRefGroup = 58615A2D27A0E3B10025D352 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -319,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA75D7227BACCE1003C7FA8 /* Features in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58615A4727A0E3B20025D352 /* mastermindTests.swift in Sources */,
+				7DA75D7427BACD51003C7FA8 /* CucumberSupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,6 +718,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7DA75D6E27BACC99003C7FA8 /* XCRemoteSwiftPackageReference "CucumberSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Tyler-Keith-Thompson/CucumberSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7DA75D6F27BACC99003C7FA8 /* CucumberSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DA75D6E27BACC99003C7FA8 /* XCRemoteSwiftPackageReference "CucumberSwift" */;
+			productName = CucumberSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 58615A2427A0E3B10025D352 /* Project object */;
 }
